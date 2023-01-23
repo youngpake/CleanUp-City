@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap' rel='stylesheet'>
+    <title>Afvalverzameling Spel</title>
+  </head>
+  <body>
+
+<div id="explainerContainer">
+  <div id="row">
+  <div class="left">
+    <div class="top">
+      <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+          <div class="popup-textbox">
+            <h1>Welkom bij "Cleanup City"!</h1>
+            <p>Een spel waarin je speelt als een schoonmaker die de stad moet opruimen voordat de tijd op is.</p>
+          
+            <h2>Objecten:</h2>
+            <ul>
+              <li>Er zijn verschillende soorten afval zoals papierafval, afvalzakken en blikjes. Het doel is om zoveel mogelijk afval te verzamelen voordat de tijd op is.</li>
+              <li>De powerup (schild) staat voor onoverwinnelijkheid. Verzamel deze om je te helpen bij je quest.</li>
+              <li>Je kunt alleen gevaarlijk afval opruimen wanneer je eerst een "masker" hebt opgepakt. Het masker is 15 seconden actief.</li>
+              <li>Pas op voor bommen. Vermijd deze om een leven te behouden, tenzij je supercharged bent.</li>
+              <li>De hartjes linksbovenin geven het aantal levens dat je nog hebt weer.</li>
+              <li>Zodra je genoeg punten hebt verzameld, verschijnd er een deur voor de uitgang naar het volgende level, bereik deze voordat de tijd op is om naar het volgende level te gaan.</li>
+              
+                </ul>
+                <h2>Bediening:</h2>
+                <ul>
+                  <li>Gebruik de W, A, S en D toetsen om het personage rond te bewegen op het scherm.</li>
+                  <li>Druk op de P toets om het spel te pauzeren en te hervatten.</li>
+                  <li>Druk op de I toets om de instructiemenu te openen.</li>
+                  
+                    </ul>
+                    <h2>Scoring:</h2>
+                    <ul>
+                      <li>Afval verzamelen zal je score met 10 punt verhogen.</li>
+                      <li>Gevaarlijk afval verzamelen terwijl je een masker draagt, zal je score met 30 punten verhogen.</li>
+                      <li>Powerups verzamelen zal je score niet verhogen maar je wel helpen om bommen en chemisch afval op te ruimen.</li>
+                    </ul>
+                    <p>Veel succes en veel plezier met het opruimen van de stad!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <img id="controls" src="uitleg/contols.png" alt="">
+      <button onclick="uitleg()" class="close-button">Close</button>
+    </div>
+  </div>
+  <div class="right">
+    <img id="uitleg" src="images/uitleg.webp" alt="">
+  </div>
+  </div>
+</div>
+
+<div id="gameMenu">
+    <button onclick="startGame()" id="start-button">Start</button>
+    <button onclick="uitleg()" id="uitleg-button">Uitleg</button>
+    <button onclick="afsluiten()" id="afsluiten-button">Afsluiten</button>
+</div>
+
+<div id="background" class="game_container">
+  <div id="timer"></div>
+  <div id="lives" class="lives">♥♥♥</div>
+  <div id="messagebox" class="messagebox"></div>
+  <img id="player" src="images/blob.png" alt="player">
+  <img id="trash" src="images/trashbag.png" alt="trash">
+  <img id="powerup" src="images/powerup.png" alt="powerup">
+  <img id="toxic" src="images/toxictrash.png" alt="toxic">
+  <img id="mask" src="images/mask.png" alt="mask">
+  <img id="obstacle" src="images/obstacle.png" alt="">
+
+  <div id="screen">
+    <h1 id="level-up" class="center"></h1>
+  </div>
+
+  <img id="door" src="R.png" alt="door">
+
+  <h2 id="pause">Press 'P' to pause game</h2>
+</div>
+  </body>
+  <script src="index-refactored.js"></script>
+</html>
